@@ -1,0 +1,60 @@
+html {
+    margin: 3% 10%;
+}
+
+body{
+    text-align: center;
+}
+.user{
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu{
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 30px;
+    /*text-align: center;*/
+    font-size: 15px;
+    border: 3px solid darkseagreen;
+    border-radius: 20px;
+}
+
+button {
+    background-color: darkseagreen;
+    font-size: 12px;
+    height: 35px;
+    border: darkseagreen;
+    border-radius: 40px;
+}
+
+#main_logo {
+    width: 650px;
+    height: 170px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
