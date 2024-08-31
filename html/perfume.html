@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
+    <script src="../sample/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <!-- <a href="./main.html"><img src="../sample/img/logo.png"></a> -->
+                <img src="../sample/img/logo.png">
+            </div>
+            <div>
+                <input type="text" placeholder="상품 검색">
+                <button><img src="../sample/img/search.svg"></button>
+            </div>
+            <div>
+                <ul id="userinfo">
+                    <li>회원가입</li>
+                    <li>|</li>
+                    <li>로그인</li>
+                    <li>|</li>
+                    <li>마이페이지</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="category">
+                <li>메이크업</li>
+                <li>|</li>
+                <li>향수</li>
+                <li>|</li>
+                <li>스킨케어</li>
+                <li>|</li>
+                <li>맨즈케어</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer id="footer">
+        <div>
+            <img src="../sample/img/logo.png">
+        </div>
+        <div id="creater">
+            <p>현대이지웰 Java 풀스택 스터디그룹 프로젝트</p>
+            <p>조장 : 김지성</p>
+            <p>조원 : 박민준, 신수빈, 황혜령</p>
+        </div>
+    </footer>
+</body>
+</html>
