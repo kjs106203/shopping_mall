@@ -3,60 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>main</title>
-    <style>
-        body{
-            text-align: center;
-        }
-        img {
-            margin-top: 110px;
-        }
-        .user{
-            margin-top: 50px;
-            margin-right: 20px;
-            font-size: 16px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .menu{
-            font-size: 20px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-            overflow: hidden;
-        }
-
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        li a {
-            text-decoration: none;
-            color: black;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        input[type="text"]{
-            width: 400px;
-            height: 30px;
-            /*text-align: center;*/
-            font-size: 15px;
-            border: 3px solid darkseagreen;
-            border-radius: 20px;
-        }
-
-        button {
-            background-color: darkseagreen;
-            font-size: 12px;
-            height: 35px;
-            border: darkseagreen;
-            border-radius: 40px;
-        }
-    </style>
+    <link href="../sample/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -68,7 +15,7 @@
         <li><a href="#"> 장바구니 </a></li>
     </ul>
 
-    <img src="../sample/img/logo.png" height=170px width=750px alt="올리브영">
+    <img id="main_logo" src="../sample/img/logo.png" height=170px width=750px alt="올리브영">
 </header>
 
 <nav>
@@ -78,13 +25,12 @@
         <li><a href="#"> 맨즈케어 </a></li>
         <li><a href="#"> 향수 </a></li>
     </b></ul>
-
 </nav>
 
 <div>
     <form>
-        <input type="text" name="search" placeholder="무엇을 찾으시나요?">
-        <button type="submit">검색</button>
+        <input type="text" name="search" placeholder="  무엇을 찾으시나요?">
+        <button><img src="../sample/img/search.svg"></button>
     </form>
 </div>
 
