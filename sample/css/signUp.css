@@ -75,13 +75,13 @@
             
         }
 
-        .infoText{
+        /* .infoText{
             white-space: pre;
             font-size: 10pt;
-        }
+        } */
 
         
-        #singUpInputBox{
+        #signUpInputBox{
             display: flex;
             flex-direction: column;
             
@@ -143,7 +143,7 @@
         }
 
         footer{
-            background-color: black;
+            background-color: gray;
             grid-area: footer;
             display: flex;
             align-items: center;
@@ -190,13 +190,19 @@
             cursor: pointer;
         }
 
-        #creator > p{
-            color: white;
-        }
-
         @media screen and (max-width:700px){
             footer> div > img{
                 display: none;
             }
         }
 
+        .formErr{
+            text-align: center;
+            color: red;
+            font-size: 10pt;
+            margin-bottom: 4px;
+        }
+        
+        .formErrtoggle {
+            display: none;
+        }
