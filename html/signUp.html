@@ -9,19 +9,45 @@
     <script>
         $(function() {
             $("#signUpBtn").click(function() {
+                // 유저가 입력한 값
                 var userdata = $("#signUpInputBox > input");
-                var formErrdiv = $("#signUpInputBox > div");
-                for(var i = 0; i < userdata.length; i++) {
-                    var inputEle = $(userdata[i]);
-                    var formEle = $(formErrdiv[i]);
-                    console.log(inputEle.val());
-                    if(inputEle.pattern == false){
-                    formEle.removeClass('formErrtoggle');
-                }
+                // 에러 div
+                var formErrDiv = $("#signUpInputBox > div");
                 
+                //input 태그 갯수만큼 반복
+                for (var i = 0; i < userdata.length; i++) {
+                    // dom으로 감싸 다양한 메서드 호출을 위해 변수 저장
+                    var inputEle = $(userdata[i]);
+                    var divEle = $(formErrDiv[i]);
+                    
+                    // 유저가 입력한 값이 인풋태그의 패턴 정규식과 일치하지 않으면 '에러 div 숨기기' 클래스 삭제
+                    if (inputEle[0].checkValidity() == false) {
+                        divEle.removeClass("formErrtoggle");
+                    } else {
+                        // 일치하는데 divEle가 formErrtoggle 클래스를 가지고 있지 않으면 클래스 추가
+                        if (!divEle.hasClass("formErrtoggle")) {
+                            divEle.addClass("formErrtoggle");
+                        }
+                    }
                 }
-            });
-        });
+
+                // 유저 패스워드 값
+                var userPw = $("#userPw").val();
+                // 유저 패스워드 확인 값
+                var userPwChk = $("#userPwChk").val();
+                
+                // 패스워드와 패스워드 확인 값이 일치하지 않으면 '에러 div 숨기기' 클래스 삭제
+                if(userPw != userPwChk) {
+                    $("#pwchkdiv").removeClass("formErrtoggle");
+                } else {
+                    // 패스워드가 일치하는데 클래스를 가지고 있지 않으면 추가
+                    if (!$("#pwchkdiv").hasClass) {
+                        $("#pwchkdiv").addClass("formErrtoggle");
+                    }
+                }
+            })
+        })
+
     </script>
     </head>
 <body>
@@ -74,7 +100,7 @@
                 <input id="userPw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%])[A-Za-z\d!@#$%]{8,}$" type="password" class="typingBox" name="userPw" placeholder="영문 대소문자와 숫자, 특수기호를 포함한 8자 이상">
                 <div class="formErr formErrtoggle">비밀번호 형식이 일치하지 않습니다.</div>
                 <input id="userPwChk" type="password" class="typingBox" name="userPwChk" placeholder="비밀번호 확인">
-                <div class="formErr formErrtoggle">비밀번호가 일치하지 않습니다.</div>
+                <div id="pwchkdiv" class="formErr formErrtoggle">비밀번호가 일치하지 않습니다.</div>
                 <input id="userName" pattern="^[가-힣]+$" type="text" class="typingBox" name="userName" placeholder="이름을 입력해주세요">
                 <div class="formErr formErrtoggle">이름 형식이 일치하지 않습니다.</div>
                 <input id="userBirth" pattern="^\d{6}$" type="text" class="typingBox" name="userBirth" placeholder="법정생년월일 6자리를 입력해주세요">
