@@ -10,7 +10,7 @@
     font-size: 16px;  
     padding: 10px;  
     margin-bottom: 10px;  
-    border: 1px solid #FE6B00; 
+    border: 1px solid #fd8b39; 
     border-radius: 5px;  
 }
 
@@ -27,10 +27,22 @@
     margin: 10px 0;
 }
 
+#idSaveFind {
+    display: flex;
+    justify-content: space-between;
+    width: 470px; 
+    margin: 10px auto; 
+}
+
 #idSave {
     display: flex;
     align-items: center;
-    margin-right: 160px;
+    /* margin-right: 160px; */
+}
+
+#findLinks {
+    display: flex;
+    align-items: center;
 }
 
 #findId a, 
@@ -55,10 +67,42 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
-
 }
 
+#newMemberContainer {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
 
+#newMemberEx, 
+#newMember {
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
 
+#newMemberEx {
+    margin-top: 5px;
+    color: gray; 
+}
 
+#newMember {
+    display: inline-block;
+    height: 30px; 
+    font-size: 16px;
+    background-color: #d6d6d6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#newMember:hover {
+    background-color: #fd8b39;
+}
+
+#header img, #userinfo {
+    cursor: pointer;
+}

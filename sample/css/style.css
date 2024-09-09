@@ -8,8 +8,21 @@ html {
     align-items: center;
 }
 
+
 #search_product > input {
-    height: 23px;
+    height: 25px;
+    width: 200px;
+    border: 3px solid #fd8b39;
+    border-radius: 20px;
+}
+
+#search_product > button{
+    background-color: #fd8b39;
+    border: #fd8b39;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 30px;
+
 }
 
 #footer {
@@ -25,6 +38,7 @@ html {
 #category {
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 
 #category > li {
@@ -174,4 +188,8 @@ html {
     margin-top: 10px;
     border-bottom: 2px solid red;
     padding-bottom: 10px;
+}
+
+#header img, #userinfo {
+    cursor: pointer;
 }
