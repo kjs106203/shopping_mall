@@ -62,13 +62,13 @@
 
         #signUpBox{
             display: flex;
+            justify-content: center;
             padding-top: 50px;
             padding-bottom: 50px;
             align-items: center;
-            justify-content: space-evenly;
             flex-wrap: wrap;
             overflow: hidden;
-            background-color: lightgrey;
+            background-color: #e3e3e3;
             border-top: 2px solid black;
             
             
@@ -84,6 +84,8 @@
         #signUpInputBox{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            width: 350px;
             
         }
 
@@ -157,7 +159,7 @@
 
             margin-top: 20px;
             margin-bottom: 70px;
-            background-color: lightgrey;
+            background-color: #e3e3e3;
             overflow: hidden;
         }
 
@@ -176,15 +178,28 @@
             transform: translateY(0%);
         }
             
-        #signUpBtn{
-            border: 1px solid black;
+        .signUpBtn{
+            border: 1px solid #fd8b39;
             border-radius: 10px;
-            background-color: black;
-            color: white;
+            background-color: #fd8b39;
+            color: black;
             font-size: 12pt;
             margin-top: 10px;
             
         }
+        #signUpBtn {
+            width: 250px;
+        }
+        .smallerBtn {
+            width: calc(300px * 0.7);
+            background-color: gray;
+            border: 1px solid gray;
+            padding: 0;
+            width: 105px;
+            height: 50px;
+            cursor: pointer;
+        }
+        
 
         #signUpBtn:hover{
             cursor: pointer;
@@ -206,3 +221,12 @@
         .formErrtoggle {
             display: none;
         }
+
+
+        .btns {
+            display: flex;
+            justify-content: center; /* 가운데 정렬 */
+            align-items: center; /* 세로축 정렬 */
+            gap: 10px; /* 버튼 사이 간격 */
+        }
+
