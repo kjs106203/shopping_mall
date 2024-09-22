@@ -193,3 +193,44 @@ html {
 #header img, #userinfo {
     cursor: pointer;
 }
+
+
+/* 상품 통합 페이지 */
+#pd > ul {
+    list-style-type: none;
+}
+
+#pd > ul > li {
+    margin: 15px 0;
+}
+
+#pd > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+.pd_sp {
+    border-bottom: 1px solid lightgray;
+}
+
+.pd_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pd_list > div {
+    display: inline-block;
+}
+
+.pd_img > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pd_img > div > img {
+    max-width: 100px;
+}
+
+.pd_info {
+    text-align: right;
+}
