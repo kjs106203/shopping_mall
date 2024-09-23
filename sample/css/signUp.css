@@ -75,13 +75,35 @@
             
         }
 
-        .infoText{
-            white-space: pre;
-            font-size: 10pt;
+        #signUpOptionBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height:150px;
+            }
+
+        @media screen and (max-width:807px){
+            #signUpOptionBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height:150px;
+                border-top: 1px solid black;
+                margin-top: 20px;
+                width: 400px;
+                align-items: center;
+            }
+        }
+
+        #signUpOptionBox div{
+            height: 50px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: aqua;
         }
 
         
-        #singUpInputBox{
+        #signUpInputBox{
             display: flex;
             flex-direction: column;
             
@@ -143,7 +165,7 @@
         }
 
         footer{
-            background-color: black;
+            background-color: gray;
             grid-area: footer;
             display: flex;
             align-items: center;
@@ -190,13 +212,25 @@
             cursor: pointer;
         }
 
-        #creator > p{
-            color: white;
-        }
-
         @media screen and (max-width:700px){
             footer> div > img{
                 display: none;
             }
         }
 
+        .formErr{
+            text-align: center;
+            color: red;
+            font-size: 10pt;
+            margin-bottom: 4px;
+        }
+        
+        .formErrtoggle {
+            display: none;
+        }
+
+        @media screen and (max-width:839px){
+            #orText{
+                display: none;
+            }
+        }
