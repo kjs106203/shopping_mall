@@ -1,5 +1,6 @@
 #loginForm {
     text-align: center;
+    margin-top: 50px;
 
 }
 
@@ -74,6 +75,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
+    margin-top: 20px;
 }
 
 #newMemberEx, 
