@@ -91,6 +91,10 @@ html {
     margin-left: 10px;
 }
 
+#pd_detail > img {
+    width: 100%;
+}
+
 .product_price {
     color: red;
     text-align: left;
