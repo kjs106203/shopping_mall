@@ -10,9 +10,9 @@
         $(function() {
             $("#signUpBtn").click(function() {
                 // 유저가 입력한 값
-                var userdata = $("#signUpInputBox > input");
+                var userdata = $("#signUpInputBox > fieldset > input");
                 // 에러 div
-                var formErrDiv = $("#signUpInputBox > div");
+                var formErrDiv = $("#signUpInputBox > fieldset > div");
                 
                 //input 태그 갯수만큼 반복
                 for (var i = 0; i < userdata.length; i++) {
