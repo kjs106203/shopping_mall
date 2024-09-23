@@ -198,6 +198,41 @@ html {
     cursor: pointer;
 }
 
+.buttonAll {
+    width: 300px;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 40px;
+    margin-top: 20px;
+    
+}
+
+.orderButton, .cartButton {
+    flex: none;
+    width: 125px;
+    height: 50px; 
+    border-radius: 10px;
+}
+
+.orderButton {
+    background-color: #fd8b39;
+    border: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+.cartButton {
+    background-color: white;
+    border: 2px solid #fd8b39;
+    color: black;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
 
 /* 상품 통합 페이지 */
 #pd > ul {
