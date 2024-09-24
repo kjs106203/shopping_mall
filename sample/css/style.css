@@ -85,6 +85,7 @@ html {
 
 #product {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .product_content {
@@ -93,6 +94,7 @@ html {
 
 #pd_detail > img {
     width: 100%;
+    margin-top: 30px;
 }
 
 .product_price {
@@ -235,41 +237,27 @@ html {
 
 
 /* 상품 통합 페이지 */
-#pd > ul {
-    list-style-type: none;
-}
-
-#pd > ul > li {
-    margin: 15px 0;
-}
-
-#pd > ul > li > a {
-    color: black;
-    text-decoration: none;
-}
-
-.pd_sp {
-    border-bottom: 1px solid lightgray;
-}
-
-.pd_list {
+#category_pd_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    margin-top: 100px;
 }
 
-.pd_list > div {
-    display: inline-block;
+.prod img{
+    width: 300px;
+    height: 300px;
 }
 
-.pd_img > div {
-    display: table-cell;
-    vertical-align: middle;
+.prod_name {
+    margin-bottom: 0px;
 }
 
-.pd_img > div > img {
-    max-width: 100px;
+.prod .original_price{
+    margin-bottom: 5px;
 }
 
-.pd_info {
-    text-align: right;
+.prod {
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 10px;
 }
