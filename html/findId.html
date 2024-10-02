@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>계정찾기</title>
     <link rel="stylesheet" href="../sample/css/findId.css">
-    
-
-    </script>
-    </head>
+    <script src="../sample/js/jquery-3.7.1.min.js"></script>
+</head>
 <body>
     <header>
-        
-        <p>TRUE LIFESTYLE MEMBERSHIP</p>
         <div>
-            <p id="secondHeadText">정직하게 고객에게</p>
+            
             <div>
                 <a href="./main.html"><img src="../sample/img/logo.png" alt="img"></a>
             </div>
         </div>
+        <h3 id="secondHeadText">정직하게 고객에게<br>TRUE LIFESTYLE MEMBERSHIP</h3>
+        
     </header>
     
     <main>
         <div id="titleBox">
-            <div id="largeTitle">
-                아이디 찾기
-            </div>
+            <h1 id="largeTitle">계정 찾기</h1>
             <div id="smallTitle">
-                <p>아이디가 기억나지 않으세요? 원하시는 방법을 선택해 아이디를 확인하실 수 있습니다.</p>
+                <h5>아이디/비밀번호가 기억나지 않으세요? 하단에서 찾으실 수 있습니다.</h5>
+                <h5>입력하신 정보는 계정 찾기에만 사용되며 저장되지 않습니다.</h5>
             </div>
+        </div>
         </div>
         <div id="findIdBox">
             <div id="simpleFindId">
                 <div id="simpleFind">
-                    간편찾기
-                </div>
-                <div id="explanation">
-                    입력하신 정보는 아이디 찾기에만 사용되며 저장되지 않습니다.
+                    <h4>아이디 찾기</h4>
                 </div>
                 <div id="inputSimpleFindIdBox">
                     <input type="text" class="inputSimpleFind" placeholder="이름을 입력해주세요.">
-                    <input type="text" class="inputSimpleFind" placeholder="법정생년월일 6자리를 입력해주세요.">
                     <input type="text" class="inputSimpleFind" placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요">
                     <button id="findIdBtn">아이디 찾기</button>
                 </div>
             </div>
-            <div id="otherWayToFindId">
+            
+
+
+            <div id="line"></div>
+
+            <div id="simpleFindPw">
+                <div id="simpleFind">
+                    <h4>비밀번호 찾기</h4>
+                </div>
+                <div id="inputSimpleFindIdBox">
+                    <input type="text" class="inputSimpleFind" placeholder="이름을 입력해주세요.">
+                    <input type="text" class="inputSimpleFind" placeholder="아이디를 입력해주세요.">
+                    <input type="text" class="inputSimpleFind" placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요">
+                    <button id="findIdBtn">비밀번호 찾기</button>
+                </div>
+            </div>
+            <!-- <div id="otherWayToFindId">
                 <div id="otherWayText">
                     인증기관을 통해 찾기 
                 </div>
@@ -63,7 +73,7 @@
                         <button class="certifyBtn">공인인증서 인증</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>    
         <div id="usingInfoBox">
             <div id="infoBoxText">

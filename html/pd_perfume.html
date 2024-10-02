@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>향수 통합</title>
     <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
-    <link href="../sample/css/category_pd.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -30,13 +29,13 @@
         </div>
         <div>
             <ul id="category">
-                <li>메이크업</li>
+                <li onclick="location.href = './pd_makeup.html'">메이크업</li>
                 <li>|</li>
-                <li>향수</li>
+                <li onclick="location.href = './pd_perfume.html'">향수</li>
                 <li>|</li>
-                <li>스킨케어</li>
+                <li onclick="location.href = './pd_skincare.html'">스킨케어</li>
                 <li>|</li>
-                <li>맨즈케어</li>
+                <li onclick="location.href = './pd_menscare.html'">맨즈케어</li>
             </ul>
         </div>
     </header>
@@ -45,7 +44,7 @@
         <div id="category_pd_list">
             <div id="prod1" class="prod">
                 <a href="./perfume_1.html">
-                    <img src="../sample/img/dior_perefume_01.jpg.webp">
+                    <img src="../sample/img/dior_perefume_01.jpg">
                 </a>
                 <div class="prodInfo">
                     <h4 class="prod_name">디올 향수</h4>

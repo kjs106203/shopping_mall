@@ -44,35 +44,39 @@
         }
 
         #largeTitle{
-            font-size: 30pt;
+            font-size: 25pt;
             text-align: center;
-            padding-bottom: 10px ;
         }
 
         #smallTitle{
             font-size: 13pt;
             text-align: center;
             padding-bottom: 10px ;
+            color: gray;
         }
 
         #findIdBox{
             display: flex;
-            padding-top: 50px;
+            padding-top: 30px;
             padding-bottom: 50px;
             justify-content: space-evenly;
             flex-wrap: wrap;
             overflow: hidden;
-            background-color: lightgrey;
-            border-top: 2px solid black;
-        } 
+            background-color: #e3e3e3;
+            border-top: 2px solid #fd8b39;
+            width: 80%;
+            margin: 0 auto;
+        }
 
 
 
         #simpleFindId{
-            border: 1px solid black;
-            border-right: 3px solid rgb(47, 43, 43);
-            margin-right: 30px;
-            margin-left: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+            margin: 0; 
+            padding-bottom: 10px;
+        
         }
         
         .inputSimpleFind{
@@ -90,47 +94,37 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px solid black;
-            margin-top: 20px;
+            margin-top: 30px;
+            border-radius: 20px;
+            
         }
 
         #findIdBtn{
             width: 308px;
             height: 38px;
-            background-color: rgb(47, 43, 43);
-            color: white;
+            background-color: #fd8b39;
+            color: black;
+            font-weight: bold;
             cursor: pointer;
             border: none;
             margin-top: 5px;
+            border-radius: 5px;
         }
 
-        .certifyBtn{
-            height: 38px;
-            width: 148px;
-            background-color: rgb(47, 43, 43);
-            color: white;
-            border: none;
+        #line {
+            width: 1px; 
+            background-color: grey; 
+            height: 200px; 
+            align-self: center;
         }
 
-        #otherWayToFindId{
-            border: 1px solid black;
-            
-        }
-
-        #otherWayBtnBox{
-            display: flex;
-            justify-content: center;
-            justify-content: space-evenly;
-        }
 
         #smallTitle{
-            width: 700px;
+            width: 2000px;
             overflow: hidden;
             white-space: no-wrap;
         }
-
-        
-
+    
 
         footer{
             background-color: gray;
@@ -164,6 +158,10 @@
             white-space: pre;
             position: relative;
             transform: translateY(0%);
+        }
+
+        #simpleFind {
+            margin-bottom: 10px;
         }
             
         
