@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>base</title>
+    <title>페리페라 워터 베어 틴트</title>
     <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
     <script src="../sample/js/jquery-3.7.1.min.js"></script>
     <script>
         $(function(){
-            var lotionPrice = 29900;
+            var lotionPrice = 9070;
 
             function updatePrice() {
                 var quantity = parseInt($("#amount").val());
@@ -61,13 +61,13 @@
         </div>
         <div>
             <ul id="category">
-                <li>메이크업</li>
+                <li onclick="location.href = './pd_makeup.html'">메이크업</li>
                 <li>|</li>
-                <li>향수</li>
+                <li onclick="location.href = './pd_perfume.html'">향수</li>
                 <li>|</li>
-                <li>스킨케어</li>
+                <li onclick="location.href = './pd_skincare.html'">스킨케어</li>
                 <li>|</li>
-                <li>맨즈케어</li>
+                <li onclick="location.href = './pd_menscare.html'">맨즈케어</li>
             </ul>
         </div>
     </header>
@@ -107,7 +107,16 @@
                         <h2 id="price" class="product_price">9,070원</h2>
                     </div>
                 </div>
+                <div class="buttonAll"></div>
+                    <button class="orderButton">바로구매</button>
+                    <button class="cartButton">장바구니</button>  
+                </div>
             </div>
+        </div>
+        <hr>
+        <div id="pd_detail">
+            <img src="../sample/img/product_logo.png">
+            <img src="../sample/img/tint_detail.png">
         </div>
     </main>
 

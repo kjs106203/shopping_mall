@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스킨케어 통합</title>
+    <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <a href="./main.html"><img src="../sample/img/logo.png"></a>
+                <!-- <img src="../sample/img/logo.png"> -->
+            </div>
+            <div id="search_product" >
+                <input type="text" placeholder="상품 검색">
+                <button><img src="../sample/img/search.svg"></button>
+            </div>
+            <div>
+                <ul id="userinfo">
+                    <li>회원가입</li>
+                    <li>|</li>
+                    <li>로그인</li>
+                    <li>|</li>
+                    <li>마이페이지</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="category">
+                <li onclick="location.href = './pd_makeup.html'">메이크업</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_perfume.html'">향수</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_skincare.html'">스킨케어</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_menscare.html'">맨즈케어</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="category_pd_list">
+            <div id="prod1" class="prod">
+                <a href="./skincare_1.html">
+                    <img src="../sample/img/skincare_1.1.jpeg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">비타 다크 스팟 세럼 30ml</h4>
+                    <h3 class="original_price">32,000원</h3><br>
+                    <h3 class="product_price">25,600원</h3> 
+                </div>
+            </div>
+            <div id="prod2" class="prod">
+                <a href="./skincare_2.html">
+                    <img src="../sample/img/skincare_2.1.jpeg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">아크네 컨트롤 131 젤 클렌저</h4>
+                    <h3 class="original_price">35,000원</h3><br>
+                    <h3 class="product_price">19,600원</h3>
+                </div>
+            </div>
+            <div id="prod3" class="prod">
+                <a href="./skincare_3.html">
+                    <img src="../sample/img/skincare_3.1.jpeg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">배스 앤드 샤워 리퀴드 바디 클렌저</h4>
+                    <h3 class="original_price">36,000원</h3><br>
+                    <h3 class="product_price">27,900원</h3>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer id="footer">
+        <div>
+            <img src="../sample/img/logo.png">
+        </div>
+        <div id="creater">
+            <p>현대이지웰 Java 풀스택 스터디그룹 프로젝트</p>
+            <p>조장 : 김지성</p>
+            <p>조원 : 박민준, 신수빈, 황혜령</p>
+        </div>
+    </footer>
+</body>
+</html>

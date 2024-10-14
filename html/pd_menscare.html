@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>base</title>
+    <title>맨즈케어 통합</title>
     <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
-    <script src="../sample/js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header>
         <div id="header">
             <div>
-                <!-- <a href="./main.html"><img src="../sample/img/logo.png"></a> -->
-                <img src="../sample/img/logo.png" onclick="location.href='./main.html'">
+                <a href="./main.html"><img src="../sample/img/logo.png"></a>
+                <!-- <img src="../sample/img/logo.png"> -->
             </div>
-            <div>
+            <div id="search_product" >
                 <input type="text" placeholder="상품 검색">
                 <button><img src="../sample/img/search.svg"></button>
             </div>
@@ -42,11 +41,40 @@
     </header>
 
     <main>
-        {% block content %}
-
-        {% endblock %}
+        <div id="category_pd_list">
+            <div id="prod1" class="prod">
+                <a href="./menscare1.html">
+                    <img src="../sample/img/m_lotion.jpg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">남자 수분 로션</h4>
+                    <h3 class="original_price">25,000원</h3><br>
+                    <h3 class="product_price">16,900원</h3> 
+                </div>
+            </div>
+            <div id="prod2" class="prod">
+                <a href="./menscare2.html">
+                    <img src="../sample/img/m_allinone1.jpg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">남자 올인원</h4>
+                    <h3 class="original_price">30,000원</h3><br>
+                    <h3 class="product_price">16,920원</h3>
+                </div>
+            </div>
+            <div id="prod3" class="prod">
+                <a href="./menscare3.html">
+                    <img src="../sample/img/m_wax1.jpg">
+                </a>
+                <div class="prodInfo">
+                    <h4 class="prod_name">남자 헤어 왁스</h4>
+                    <h3 class="original_price">25,000원</h3><br>
+                    <h3 class="product_price">13,900원</h3>
+                </div>
+            </div>
+        </div>
     </main>
-
+    
     <footer id="footer">
         <div>
             <img src="../sample/img/logo.png">

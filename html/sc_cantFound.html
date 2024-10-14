@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색결과 없음</title>
+    <link href="../sample/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../sample/css/cantFound.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <img src="../sample/img/logo.png" onclick="location.href='./main.html'">
+                <!-- <img src="../sample/img/logo.png"> -->
+            </div>
+            <div id="search_product" >
+                <input type="text" placeholder="상품 검색">
+                <button><img src="../sample/img/search.svg"></button>
+            </div>
+            <div>
+                <ul id="userinfo">
+                    <li>회원가입</li>
+                    <li>|</li>
+                    <li>로그인</li>
+                    <li>|</li>
+                    <li>마이페이지</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="category">
+                <li onclick="location.href = './pd_makeup.html'">메이크업</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_perfume.html'">향수</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_skincare.html'">스킨케어</li>
+                <li>|</li>
+                <li onclick="location.href = './pd_menscare.html'">맨즈케어</li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div id="separate"></div>
+
+        <div id="noRst">
+            <img src="../sample/img/exclamation_mark.png">
+            <p><h2>검색 결과가 없습니다</h3></p>
+            <p>검색 키워드를 변경해보세요!</p>
+        </div>
+        <div id="separate"></div>
+
+        <div id="recommend">
+            <p><h2>이런 상품은 어떠세요?</h2></p>
+            <ul id="pd_reco">
+                <li>
+                    <a href="./menscare1.html">
+                        <div id="reco_hr">
+                            <div id="reco_cont">
+                                <div>
+                                    <img id="reco_img" src="../sample/img/m_lotion.jpg">
+                                </div> 
+                                <div id="reco_cont_info">
+                                    <h4>남자 수분 로션</h4>
+                                    <span id="origin_p">25,000원</span>
+                                    <span id="product_p"><b>16,900원</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./perfume_1.html">
+                        <div id="reco_hr">
+                            <div id="reco_cont">
+                                <div>
+                                    <img id="reco_img" src="../sample/img/dior_perefume_01.jpg">
+                                </div> 
+                                <div id="reco_cont_info">
+                                    <h4>디올 향수</h4>
+                                    <span id="origin_p">96,000원</span>
+                                    <span id="product_p"><b>87,900원</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./makeup_1.html">
+                        <div id="reco_hr">
+                            <div id="reco_cont">
+                                <div>
+                                    <img id="reco_img" src="../sample/img/cushion1.jpg">
+                                </div> 
+                                <div id="reco_cont_info">
+                                    <h4>에스쁘아 쿠션</h4>
+                                    <span id="origin_p">38,000원</span>
+                                    <span id="product_p"><b>29,990원</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./skincare_1.html">
+                        <div id="reco_hr">
+                            <div id="reco_cont">
+                                <div>
+                                    <img id="reco_img" src="../sample/img/skincare_1.1.jpeg">
+                                </div> 
+                                <div id="reco_cont_info">
+                                    <h4>비타 다크 스팟 세럼 30ml</h4>
+                                    <span id="origin_p">32,000원</span>
+                                    <span id="product_p"><b>25,600원</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <div>
+            <img src="../sample/img/logo.png">
+        </div>
+        <div id="creater">
+            <p>현대이지웰 Java 풀스택 스터디그룹 프로젝트</p>
+            <p>조장 : 김지성</p>
+            <p>조원 : 박민준, 신수빈, 황혜령</p>
+        </div>
+    </footer>
+</body>
+</html>

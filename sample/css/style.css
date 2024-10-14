@@ -8,8 +8,21 @@ html {
     align-items: center;
 }
 
+
 #search_product > input {
-    height: 23px;
+    height: 25px;
+    width: 200px;
+    border: 3px solid #fd8b39;
+    border-radius: 20px;
+}
+
+#search_product > button{
+    background-color: #fd8b39;
+    border: #fd8b39;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 30px;
+
 }
 
 #footer {
@@ -25,6 +38,7 @@ html {
 #category {
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 
 #category > li {
@@ -71,10 +85,16 @@ html {
 
 #product {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .product_content {
     margin-left: 10px;
+}
+
+#pd_detail > img {
+    width: 100%;
+    margin-top: 30px;
 }
 
 .product_price {
@@ -174,4 +194,70 @@ html {
     margin-top: 10px;
     border-bottom: 2px solid red;
     padding-bottom: 10px;
+}
+
+#header img, #userinfo {
+    cursor: pointer;
+}
+
+.buttonAll {
+    width: 300px;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 40px;
+    margin-top: 20px;
+    
+}
+
+.orderButton, .cartButton {
+    flex: none;
+    width: 125px;
+    height: 50px; 
+    border-radius: 10px;
+}
+
+.orderButton {
+    background-color: #fd8b39;
+    border: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+.cartButton {
+    background-color: white;
+    border: 2px solid #fd8b39;
+    color: black;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+/* 상품 통합 페이지 */
+#category_pd_list{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+
+.prod img{
+    width: 300px;
+    height: 300px;
+}
+
+.prod_name {
+    margin-bottom: 0px;
+}
+
+.prod .original_price{
+    margin-bottom: 5px;
+}
+
+.prod {
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 10px;
 }

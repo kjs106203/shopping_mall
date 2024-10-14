@@ -1,0 +1,389 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto 200px;
+    margin: 0px;
+}
+
+header{
+    align-content: center;
+}
+
+#searchBtn{
+    background-color: #fd8b39;
+    /* font-size: 15px; */
+    width: 40px;
+    height: 40px;
+    border: #fd8b39;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+#searchBarBox{
+    margin-left: 100px;
+}
+#headerBox{
+    grid-area: header;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#firstHeaderBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#categoryBox{
+    align-content: center;
+}
+
+#navigateBar > li {
+margin-left:2px;
+margin-right:2px;
+} 
+
+#navigateBar{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+#category {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#category > li {
+    display: inline;
+    padding: 0% 1% 3% 3%;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+}
+
+footer{
+    background-color: gray;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+
+/* div{
+    border: 1px solid black;
+} */
+table{
+    border:1px solid black;
+}
+/* tr{
+    border: 1px solid black;
+} */
+td{
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+}
+
+
+main{
+   margin: 0px;
+    
+}
+
+#mainBox{
+    margin-left:auto ;
+    margin-right: auto;
+    width: 1020px;
+    position: relative;
+    bottom: 130px;
+
+}
+
+#mbshipInfoWrappingBox{
+    background-color: white;
+    padding: 10px;
+}
+
+#bannerColorBox{
+    background-color: bisque;
+    margin: 0px;
+    height: 150px;
+    border-top: 3px solid rgb(85, 85, 85);
+}
+
+#mainBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+    width: 1010px;
+}
+
+#innerMainBox{
+    width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#membershipInfo{
+    height: 60px;
+}
+
+#orderBtnBox{
+    text-align: center;
+    height: 100px;
+    align-content: center;
+}
+
+#orderBtnSpan{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grade{
+    border-radius: 100%;
+    background-color: yellowgreen;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.shippingSelectInput{
+    width: 268px;
+    height: 50px;
+    margin-left: 0px;
+}
+
+table{
+    width: 1010px;
+}
+
+.selectOrder{
+    width: 150px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10%;
+    border: 1px solid rgb(266, 122, 116);
+    cursor: pointer;
+    background-color: white;
+}
+
+.chooseBtn{
+    width: 120px;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 10%;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.goods{
+    
+    border: 1px solid rgb(230, 230, 230);
+    border-top: 2px solid lightslategray;
+}
+
+#recommendationBox{
+    height: 70px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#couponDiscount{
+    height: 70px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(246, 246, 246);
+    align-items: center;
+    position: relative;
+    bottom: 55px;
+}
+
+#couponDiscount > div{
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+#calculateBox{
+    height: 100px;
+}
+
+#deleteBtnBox{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#shipmentTitle{
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+#amountBox{
+    width: 50px;
+    border-radius: 10%;
+}
+
+#gradeBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#gradeBenefit{
+    margin-top: 5px;
+}
+
+#addGoods{
+    height: 250px;
+    
+}
+
+#membershipInfoBox{
+    display: flex;
+    align-items: center;
+    border-top: 5px solid rgb(51, 51, 51);
+    border-bottom: 1px solid lightgray;
+    height: 130px;
+    background-color: white;
+}
+
+#userMembership{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#orderListTitle{
+    display: flex;
+    align-items: center;
+}
+
+#goodsNum{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-left: 10px;
+}
+
+.userInfoTd{
+    border: 1px solid white;
+}
+
+#firstUserInfoTd{
+    border-right: 1px solid lightgray;
+}
+
+#secondUserInfoTd{
+    border-right: 1px solid lightgray;
+}
+
+#thirdUserInfoTd{
+    border-right: 1px solid lightgray;
+}
+
+.cost{
+    border-top: 2px solid yellowgreen;
+    border-bottom: 1px solid lightslategray;
+    border-left: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
+}
+
+.costNum{
+    font-size: 25px;
+}
+
+#orderEach{
+    color: rgb(266, 122, 116);
+}
+
+#orderAll{
+    background-color:rgb(266, 122, 116);
+    color: white;
+}
+
+#minus{
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    bottom: 60px;
+    left: 330px;
+    background-color: white;
+}
+
+#plus{
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    bottom: 90px;
+    left: 750px;
+    background-color: white;
+}
+
+#searchBar{
+    width: 400px;
+    height: 40px;
+    /* text-align: left; */
+    font-size: 15px;
+    border: 3px solid #fd8b39;
+    border-radius: 20px;
+}
+
+#searchBar::placeholder {
+    padding-left: 20px;
+}
+
+#shippingName{
+    font-size: 40px;
+}
+
+#stage{
+    font-size: 20px;
+}

@@ -1,0 +1,57 @@
+#separate {
+    width: 100%;
+    height: 30px;
+    background-color: #F5F5F5;
+}
+
+#noRst {
+    text-align: center;   
+    margin: 40px;
+    margin-bottom: 50px;
+}
+
+#recommend {
+    margin: 40px;
+    text-align: center;
+}
+
+#pd_reco {
+    list-style: none;
+}
+
+#pd_reco a {
+    text-decoration: none;
+    color: black;
+}
+
+#reco_cont img{
+    width: 100px;
+    height: 100px;
+}
+
+#reco_cont {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#reco_hr {
+    border-bottom: lightgray solid 1px;
+}
+
+#reco_cont_info {
+    text-align: right;
+}
+
+#reco_cont div {
+    display: inline-block;
+}
+
+#origin_p {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#product_p {
+    color: red;
+    margin-left: 10px
+}
