@@ -1,0 +1,26 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+bin/
+target/
+*.log
+*.tmp
+
