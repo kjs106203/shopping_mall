@@ -16,6 +16,7 @@ CREATE TABLE PRODUCT (
 	P_CATEGORY	VARCHAR2(3000)	NULL,
 	P_IMG	VARCHAR2(2000)	NULL,
 	P_STOCK	NUMBER	NULL,
+	P_DETAIL VARCHAR2(4000),
 	CONSTRAINT PK_PRODUCT PRIMARY KEY (P_NO)
 );
 
@@ -71,30 +72,31 @@ CREATE SEQUENCE SEQ_OUT NOCACHE;
 CREATE SEQUENCE SEQ_P NOCACHE;
 
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '에스쁘아 쿠션', 38000, 10, 'makeup', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '에스쁘아 쿠션', 38000, 10, 'makeup', 'cushion1.jpg+cushion2.jpg' ,99,'cushion_detail.png');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '페리페라 워터 베어 틴트', 12000, 10, 'makeup', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '페리페라 워터 베어 틴트', 12000, 10, 'makeup', 'tint1.jpg+tint2.jpg' ,99,'tint_detail.png');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '클리오 펜슬라이너', 11000, 10, 'makeup', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '클리오 펜슬라이너', 11000, 10, 'makeup', 'eyeliner1.jpg+eyeliner2.jpg' ,99,'eyeliner_detail.png');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '남자 수분 로션', 25000, 10, 'menscare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '남자 수분 로션', 25000, 10, 'menscare', 'm_lotion.jpg+m_lotion2.jpg' ,99,'menscare1_detail1.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '남자 올인원', 30000, 10, 'menscare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '남자 올인원', 30000, 10, 'menscare', 'm_allinone1.jpg+m_allinone2.jpg' ,99,'menscare2_detail2.jpg+menscare2_detail1.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '남자 헤어 왁스', 25000, 10, 'menscare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '남자 헤어 왁스', 25000, 10, 'menscare', 'm_wax1.jpg+m_wax2.jpg' ,99,'menscare3_detail1.jpg+menscare3_detail2.jpg+menscare3_detail3.jpg');
 
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '디올 향수', 96000, 10, 'perfume', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '디올 향수', 96000, 10, 'perfume', 'dior_perefume_01.jpg+dior_perfume_02.jpg' ,99,'perfume1_detail1.webp+perfume1_detail2.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '조말론 향수', 180000, 10, 'perfume', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '조말론 향수', 180000, 10, 'perfume', 'jomalone1.jpg+jomalone2.png' ,99,'perfume2_detail1.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '바이레도 향수', 250000, 10, 'perfume', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '바이레도 향수', 250000, 10, 'perfume', 'byredo1.jpg+byredo2.jpg' ,99,'pefume3_detail1.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '비타 다크 스팟 세럼', 32000, 10, 'skincare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '비타 다크 스팟 세럼', 32000, 10, 'skincare', 'skincare_1.1.jpeg+skincare_1.2.jpeg' ,99,'skincare_detail_1_1.jpg+skincare_detail_1_2.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '아크네 컨트롤 131 젤 클렌저', 30000, 10, 'skincare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '아크네 컨트롤 131 젤 클렌저', 30000, 10, 'skincare', 'skincare_2.1.jpeg+skincare_2.2.jpeg' ,99,'skincare_detail_2_1.jpg+skincare_detail_2_2.jpg');
 INSERT INTO PRODUCT
-VALUES(SEQ_P.NEXTVAL, '바이오더마 하이드라비오 토너 500ml', 36000, 10, 'skincare', '' ,99);
+VALUES(SEQ_P.NEXTVAL, '바이오더마 하이드라비오 토너 500ml', 36000, 10, 'skincare', 'skincare_3_1.jpg+skincare_3_2.jpg' ,99,'skincare_detail_3_1.jpg+skincare_detail_3_2.jpg');
+
 
 SELECT * FROM PRODUCT;
 
