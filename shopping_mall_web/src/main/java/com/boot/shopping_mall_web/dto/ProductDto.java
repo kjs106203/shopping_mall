@@ -1,4 +1,4 @@
-package com.shoppingmall.dto;
+package com.boot.shopping_mall_web.dto;
 
 public class ProductDto {
     private int p_no;

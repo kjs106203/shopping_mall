@@ -1,4 +1,4 @@
-package common.shopping_mall.src.main.java.com.shoppingmall.dto;
+package com.boot.shopping_mall_web.dto;
 
 public class PayDto {
     private int o_no;
