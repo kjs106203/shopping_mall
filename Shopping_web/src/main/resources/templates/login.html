@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <img src="img/logo.png" onclick="location.href='./main.html'">
+                <!-- <img src="img/logo.png"> -->
+            </div>
+            <div id="search_product" >
+                <input type="text" placeholder="상품 검색">
+                <button><img src="img/search.svg"></button>
+            </div>
+            <div>
+                <ul id="userinfo">
+                    <li>회원가입 </li>
+                    <li>|</li>
+                    <li>로그인</li>
+                    <li>|</li>
+                    <li>마이페이지</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form id="loginForm">
+            <h2>로그인</h2>
+            <h4 id="login_ad">로그인하여 회원서비스를 받아보세요!</h4> <!-- 글씨색깔 회색으로 -->
+            <input type="text" name="userId" id="userId" placeholder="아이디를 입력하세요."><br>
+            <input type="password" name="userPwd" id="uwerPwd" placeholder="비밀번호 (8~12자 영문자+숫자+특수문자)"><br>
+            <div id="idSaveFind">
+                <span id="idSave"><input type="checkbox" name="idSave">아이디 저장</span>
+                <div id="findLinks">
+                    <span id="findId"><a href="">아이디 찾기</a></span>
+                    <span>|</span>
+                    <span id="findPwd"><a href="">비밀번호 찾기</a></span>
+                </div>
+            </div>
+            <div><input type="submit" id="submitLogin" value="로그인"></div>
+
+        </form>
+        <div id="newMemberContainer">
+            <span id="newMemberEx">회원가입을 하려면</span>
+            <button id="newMember" onclick="location.href='signup.html'">회원가입</button>
+        </div>
+
+    </main>
+    
+    <footer id="footer">
+        <div>
+            <img src="img/logo.png">
+        </div>
+        <div id="creater">
+            <p>현대이지웰 Java 풀스택 스터디그룹 프로젝트</p>
+            <p>조장 : 김지성</p>
+            <p>조원 : 박민준, 신수빈, 황혜령</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns:minmax(200px, 1fr); /* auto를 사용하면 그리드의 셀의 크기가 내부 요소에 맞춰지기 때문에 줄어들지 않아 flex-wrap이 동작하지 않는다. 하지만 minmax는 최소값과 최대값을 지정할 수 있어 콘텐츠의 크기와 상관없이 동작한다.*/ 
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas: 
+            'header '
+            'main '
+            'footer';
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blanchedalmond;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    grid-area: main;
+    
+}
+
+#largeTitle{
+    font-size: 25pt;
+    text-align: center;
+}
+
+#smallTitle{
+    font-size: 13pt;
+    text-align: center;
+    padding-bottom: 10px ;
+    color: gray;
+}
+
+#findIdBox{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #e3e3e3;
+    border-top: 2px solid #fd8b39;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+#simpleFindId{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin: 0; 
+    padding-bottom: 10px;
+
+}
+
+.inputSimpleFind{
+    width: 300px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    height: 30px;
+}
+
+.inputSimpleFind::placeholder{
+    text-indent: 10px;
+}
+
+.inputSimpleFindIdBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+
+.findIdBtn{
+    width: 308px;
+    height: 38px;
+    background-color: #fd8b39;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#line {
+    width: 1px; 
+    background-color: grey; 
+    height: 200px; 
+    align-self: center;
+}
+
+
+#smallTitle{
+    width: 2000px;
+    overflow: hidden;
+    white-space: no-wrap;
+}
+
+
+footer{
+    background-color: gray;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+
+#usingInfoBox{
+
+    margin-top: 20px;
+    margin-bottom: 70px;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+#infoBoxText{
+    margin-left: 10px;
+}
+
+#infoBoxText > p{
+    font-size: 15pt;
+}
+
+.usingInfo{
+    font-size: 10pt;
+    white-space: pre;
+    position: relative;
+    transform: translateY(0%);
+}
+
+.simpleFind {
+    margin-bottom: 10px;
+}
+
+
+

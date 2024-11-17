@@ -1,0 +1,263 @@
+html {
+    margin: 3% 10%;
+}
+
+#header, #footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#search_product > input {
+    height: 25px;
+    width: 200px;
+    border: 3px solid #fd8b39;
+    border-radius: 20px;
+}
+
+#search_product > button{
+    background-color: #fd8b39;
+    border: #fd8b39;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 30px;
+
+}
+
+#footer {
+    height: 250px;
+    background-color: gray;
+    margin: 5% -10%;
+}
+
+#userinfo > li {
+    display: inline;
+}
+
+#category {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#category > li {
+    display: inline;
+    padding: 0% 1% 3% 3%;
+}
+
+#creater > p:first-of-type {
+    font-weight: bold;
+}
+
+.product_wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_wrap > img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.img_thumbnail > img {
+    width: 100%;
+}
+
+.img_thumbnail > img.active {
+    border: 1px solid black;
+}
+
+.img_thumbnail {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.img_thumbnail > img {
+    display: inline;
+    cursor: pointer;
+}
+
+#product {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.product_content {
+    margin-left: 10px;
+}
+
+#pd_detail > img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.product_price {
+    color: red;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+}
+
+.original_price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: gray;
+}
+
+.del_info {
+    list-style-type: none;
+    padding-left: 0;
+    color: gray;
+    margin-top: 0;
+}
+
+.del_info > li {
+    margin-top: 10px;
+}
+
+.del_info > li > span {
+    border-right: 1px solid gray;
+    width: 80px;
+    display: table-cell;
+}
+
+.del_info > li > div {
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.cont_area {
+    display: table-cell;
+}
+
+.tit_area {
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.amount {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.amount_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btnCalc {
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.option_cnt_box {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+.label {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.total_price {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
+#header img, #userinfo {
+    cursor: pointer;
+}
+
+.buttonAll {
+    width: 300px;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 40px;
+    margin-top: 20px;
+    
+}
+
+.orderButton, .cartButton {
+    flex: none;
+    width: 125px;
+    height: 50px; 
+    border-radius: 10px;
+}
+
+.orderButton {
+    background-color: #fd8b39;
+    border: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+.cartButton {
+    background-color: white;
+    border: 2px solid #fd8b39;
+    color: black;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+/* 상품 통합 페이지 */
+#category_pd_list{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+
+.prod img{
+    width: 300px;
+    height: 300px;
+}
+
+.prod_name {
+    margin-bottom: 0px;
+}
+
+.prod .original_price{
+    margin-bottom: 5px;
+}
+
+.prod {
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 10px;
+}

@@ -1,0 +1,68 @@
+html {
+    margin: 3% 10%;
+}
+
+body{
+    text-align: center;
+}
+.user{
+    margin-top: 40px;
+    /* margin-right: 5px; */
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu{
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 40px;
+    /* text-align: left; */
+    font-size: 15px;
+    border: 3px solid #fd8b39;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #fd8b39;
+    /* font-size: 15px; */
+    width: 40px;
+    height: 40px;
+    border: #fd8b39;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#main_logo {
+    width: 650px;
+    height: 130px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+#slogan {
+    text-align: center;
+    margin-left: 530px; 
+    margin-bottom: 50px;
+}

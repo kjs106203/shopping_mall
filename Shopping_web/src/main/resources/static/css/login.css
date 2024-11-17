@@ -1,0 +1,110 @@
+#loginForm {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 450px;  
+    height: 30px; 
+    font-size: 16px;  
+    padding: 10px;  
+    margin-bottom: 10px;  
+    border: 1px solid #fd8b39; 
+    border-radius: 5px;  
+}
+
+#login_ad{
+    color: gray;
+
+}
+
+
+#loginForm p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#idSaveFind {
+    display: flex;
+    justify-content: space-between;
+    width: 470px; 
+    margin: 10px auto; 
+}
+
+#idSave {
+    display: flex;
+    align-items: center;
+    /* margin-right: 160px; */
+}
+
+#findLinks {
+    display: flex;
+    align-items: center;
+}
+
+#findId a, 
+#findPwd a {
+    text-decoration: none; 
+    color: gray; 
+    margin: 0 5px; 
+}
+
+#findId a:hover, 
+#findPwd a:hover {
+    color: black;  
+}
+
+#submitLogin {
+    width: 470px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #fd8b39;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newMemberContainer {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+#newMemberEx, 
+#newMember {
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#newMemberEx {
+    margin-top: 5px;
+    color: gray; 
+}
+
+#newMember {
+    display: inline-block;
+    height: 30px; 
+    font-size: 16px;
+    background-color: #d6d6d6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#newMember:hover {
+    background-color: #fd8b39;
+}
+
+#header img, #userinfo {
+    cursor: pointer;
+}

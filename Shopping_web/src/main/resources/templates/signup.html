@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/signUp.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function() {
+            $("#signUpBtn").click(function() {
+                // 유저가 입력한 값
+                var userdata = $("#signUpInputBox > fieldset > input");
+                // 에러 div
+                var formErrDiv = $("#signUpInputBox > fieldset > div");
+                
+                //input 태그 갯수만큼 반복
+                for (var i = 0; i < userdata.length; i++) {
+                    // dom으로 감싸 다양한 메서드 호출을 위해 변수 저장
+                    var inputEle = $(userdata[i]);
+                    var divEle = $(formErrDiv[i]);
+                    
+                    // 유저가 입력한 값이 인풋태그의 패턴 정규식과 일치하지 않으면 '에러 div 숨기기' 클래스 삭제
+                    if (inputEle[0].checkValidity() == false) {
+                        divEle.removeClass("formErrtoggle");
+                    } else {
+                        // 일치하는데 divEle가 formErrtoggle 클래스를 가지고 있지 않으면 클래스 추가
+                        if (!divEle.hasClass("formErrtoggle")) {
+                            divEle.addClass("formErrtoggle");
+                        }
+                    }
+                }
+
+                // 유저 패스워드 값
+                var userPw = $("#userPw").val();
+                // 유저 패스워드 확인 값
+                var userPwChk = $("#userPwChk").val();
+                
+                // 패스워드와 패스워드 확인 값이 일치하지 않으면 '에러 div 숨기기' 클래스 삭제
+                if(userPw != userPwChk) {
+                    $("#pwchkdiv").removeClass("formErrtoggle");
+                } else {
+                    // 패스워드가 일치하는데 클래스를 가지고 있지 않으면 추가
+                    if (!$("#pwchkdiv").hasClass) {
+                        $("#pwchkdiv").addClass("formErrtoggle");
+                    }
+                }
+            })
+        })
+
+    </script>
+    </head>
+<body>
+    <header>
+        <div>
+            
+            <div>
+                <a href="./main.html"><img src="img/logo.png" alt="img"></a>
+            </div>
+        </div>
+        <h3 id="secondHeadText">정직하게 고객에게<br>TRUE LIFESTYLE MEMBERSHIP</h3>
+        
+    </header>
+    
+    <main>
+        <div id="titleBox">
+            <div id="largeTitle">
+                멀티캠퍼스 쇼핑몰 통합회원 가입
+            </div>
+            <div id="smallTitle">
+                보너스 포인트도 쌓자!
+            </div>
+        </div>
+        <div id="signUpBox">
+            <!-- <div id="signUpInfoBox">                
+                 <ul>
+                    <li>
+                        <p class="infoText">기존 회원가입 정보와 일치하지하는 정보를 입력하셔야 회원가입 여부를 정확하게 확인
+                            하실 수 있습니다.입력하신 정보는 회원가입 여부에만 사용되며 저장되지 않습니다.</p>
+                    </li>
+                    <li>
+                        <p class="infoText">올리브영, CJ온스타일, CJ더마켓, CJ문화재단, ONEiVERSE 에서는 전자상거래
+                            에 의거하여 만 14세 미만의 어린이/학생의 회원가입을 제한합니다.</p>
+                    </li>
+                </ul> 
+            </div> -->
+            <div id="signUpInputBox">
+                <fieldset>
+                    <legend>계정정보</legend>
+                    <input id="userId" pattern="[0-9a-z]+$" type="text" class="typingBox" name="userId" placeholder="아이디는 영문 소문자 혹은 숫자만 가능합니다.">
+                    <div class="formErr formErrtoggle">아이디 형식이 일치하지 않습니다.</div>
+                    <input id="userPw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%])[A-Za-z\d!@#$%]{8,}$" type="password" class="typingBox" name="userPw" placeholder="영문 대소문자와 숫자, 특수기호를 포함한 8자 이상">
+                    <div class="formErr formErrtoggle">비밀번호 형식이 일치하지 않습니다.</div>
+                    <input id="userPwChk" type="password" class="typingBox" name="userPwChk" placeholder="비밀번호 확인">
+                    <div id="pwchkdiv" class="formErr formErrtoggle">비밀번호가 일치하지 않습니다.</div>
+                </fieldset>
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <input id="userName" pattern="^[가-힣]+$" type="text" class="typingBox" name="userName" placeholder="이름을 입력해주세요">
+                    <div class="formErr formErrtoggle">이름 형식이 일치하지 않습니다.</div>
+                    <input id="userBirth" pattern="^\d{6}$" type="text" class="typingBox" name="userBirth" placeholder="법정생년월일 6자리를 입력해주세요">
+                    <div class="formErr formErrtoggle">생년월일 형식이 일치하지 않습니다.</div>
+                    <input id="userPhone" pattern="^\d{7,8}$" type="text" class="typingBox" name="userPhone" placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요">
+                    <div class="formErr formErrtoggle">전화번호 형식이 일치하지 않습니다.</div>
+                    <input id="userEmail" type="email" class="typingBox" name="userEmail" placeholder="example@multicampus.com">
+                    <div class="formErr formErrtoggle">이메일 형식이 일치하지 않습니다.</div>
+                </fieldset>
+                <div class="btns">
+                    <button type="button" class="signUpBtn" id="signUpBtn" >회원가입 </button>
+                    <button class="signUpBtn smallerBtn"><img style="height: 30px;" src="img/back.png"></button>
+                </div>
+            </div>
+            <!-- <div id="orText">또는</div>
+            <div id="signUpOptionBox">
+                <div>  
+                    로그인 옵션 1              
+                </div> 
+                <div>  
+                    로그인 옵션 2             
+                </div>
+            </div> -->
+        </div>
+        <div id="usingInfoBox">
+            <div id="infoBoxText">
+                <p>
+                    이용안내
+                </p>
+            </div>
+            <ul>
+                <li><p class="usingInfo">회원이 되시면 하나의 통합된 회원 ID와 비밀번호로 CJ ONE 및 각 브랜드 웹 사이트의 다양한 서비스(포인트 조회, 카드등록, 정보변경 서비스 등)를 이용하실 수 
+있습니다.</p></li>
+                <li><p class="usingInfo">CJ ONE에 가입하더라도 약관 동의되지 않은 CJ ONE 제휴 브랜드에는 개인정보가 제공되지 않습니다.</p></li>
+                <li><p class="usingInfo">CJ ONE은 CJ ONE 제휴 브랜드의 통합 멤버십 서비스입니다.</p></li>
+                <li><p class="usingInfo">하나의 아이디(ID)로 CJ ONE 제휴 브랜드 사이트를 안전하고 편리하게 이용할 수 있습니다.</p></li>
+                <li><p class="usingInfo">기존의 각 CJ ONE 제휴 브랜드 사이트에 1개 이상 가입되어 있는 회원님은 새로운 CJ ONE 통합 아이디(ID)를 생성하신 후 가입하실 수 있습니다.</p></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="img/logo.png">
+        </div>
+        <div id="creator">
+            <p style="font-weight: bold;">현대이지웰 Java 풀스택 스터디그룹 프로젝트</p>
+            <p>조장 : 김지성</p>
+            <p>조원 : 박민준, 신수빈, 황혜령</p>
+        </div>
+    </footer>
+</body>
+</html>
